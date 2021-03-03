@@ -1,0 +1,72 @@
+@import "./variables";
+
+$burger-size: 40px;
+$bars-size: $burger-size / 2 / 5;
+$bars-height: $bars-size;
+
+.burger {
+  position: absolute;
+  z-index: 666;
+  top: 20px;
+  left: 20px;
+  width: $burger-size;
+  height: $burger-size;
+  padding: 0 !important;
+  display: none;
+  background: $accent-med;
+  border-radius: 50%;
+
+  @media (max-width: 1024px) {
+    display: inline-block;
+  }
+
+  .bars {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+
+    .bar {
+      position: absolute;
+      width: 100%;
+      background: $secondary-light;
+      transition: 0.4s;
+      height: $bars-height;
+      border-radius: 4px;
+
+      &:nth-of-type(3) {
+        top: calc(80% - 2px);
+      }
+
+      &:nth-of-type(2) {
+        top: calc(50% - 2px);
+      }
+
+      &:nth-of-type(1) {
+        top: calc(20% - 2px);
+      }
+    }
+  }
+
+  // ROTATING BARS INTO CLOSE BUTTON #######################
+  &.open {
+
+    .bar {
+      background: $secondary-dark;
+
+      &:nth-of-type(1) {
+        transform: rotate(225deg);
+        top: calc(50% - 2px);
+      }
+
+      &:nth-of-type(2) {
+        transform: translateX(-60px);
+      }
+
+      &:nth-of-type(3) {
+        transform: rotate(-225deg);
+        top: calc(50% - 2px);
+      }
+    }
+  }
+}

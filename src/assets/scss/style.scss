@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+@import "reset";
+@import "variables";
+@import "scrollbar";
+
+
+
+* {
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.swiper-page {
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  padding-top: 90px;
+
+  @media (max-width: 768px) {
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
+.button {
+  background: gainsboro;
+  height: 40px;
+  padding: 8px;
+  min-width: 120px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  // cursor: pointer;
+}
+
+.primary-button {
+  background: $secondary-light;
+  border: 2px solid $secondary-light;
+  color: $accent-light;
+}
+
+.secondary-button {
+  background: transparent;
+  border: 2px solid $secondary-light;
+  color: $secondary-light;
+}
+
+.half-button-left {
+  border-radius: 25px 0 0 25px;
+}
+
+.half-button-right {
+  border-radius: 0 25px 25px 0;
+}

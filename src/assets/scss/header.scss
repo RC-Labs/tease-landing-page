@@ -1,0 +1,118 @@
+@import "./variables";
+
+header {
+  position: absolute;
+  height: 80px;
+  background: white;
+  width: 100%;
+  z-index: 100;
+  padding: 10px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 580px) {
+    padding: 20px;
+  }
+}
+
+.header-logo {
+  width: 120px;
+  position: relative;
+  z-index: 100;
+  fill: $secondary-light;
+  transition: fill 0.5s, margin 0.5s;
+
+  &.open {
+    fill: $accent-light;
+    margin-top: 100px;
+  }
+
+  @media (max-width: 1024px) {
+    margin-left: 40px;
+
+    &.open {
+      margin-left: 65px;
+    }
+  }
+
+  @media (max-width: 580px) {
+    margin-left: 60px;
+
+    &.open {
+      margin-left: 85px;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  margin-right: 40px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.menu-link {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: $secondary-light;
+  margin-right: 20px;
+  padding: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width:1024px) {
+    color: $accent-light;
+    margin-right: 0;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+}
+
+.header-buttons {
+  display: flex;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+// MOBILE MENU
+
+.mobile-menu {
+  display: flex;
+  background: $secondary-dark;
+  position: absolute;
+  top: 0px;
+  left: -320px;
+  width: 320px;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  transition: left 0.3s ease-in-out;
+
+  &.menu-open {
+    left: 0;
+
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
