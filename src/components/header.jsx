@@ -3,7 +3,6 @@ import '../assets/scss/header.scss';
 import '../assets/scss/burger.scss';
 import { menuData } from '../data/header-data';
 
-
 import { ReactComponent as Logo } from '../assets/images/logo.svg'
 
 
@@ -24,7 +23,7 @@ export class Header extends Component {
   render() {
     return (
       <header>
-        <Logo className={this.state.isOpen ? 'header-logo open' : 'header-logo'} />
+        <a href="#home"><Logo className={this.state.isOpen ? 'header-logo open' : 'header-logo'} /></a>
         <nav>
           <Menu />
           <Burger action={this.handler} passOpen={this.state.isOpen} toggleClass={this.state.isOpen ? 'burger open' : 'burger'} />
@@ -61,7 +60,7 @@ class Menu extends Component {
 }
 
 const menuLinks = menuData.map((element, index) =>
-  <li className='menu-link link' key={`menu-link-${index}`}>{element}</li>
+  <a href={element.link} key={`menu-link-${index}`}><li className='menu-link' >{element.name}</li></a>
 )
 
 

@@ -6,7 +6,7 @@ import heroVideo from '../assets/images/15536284-preview.mp4';
 export class Hero extends Component {
   render() {
     return (
-      <section className="hero">
+      <section className="hero" id='home'>
         <div className="hero-overlay"></div>
         <video className='logo-video' autoPlay loop muted>
           <source src={heroVideo} type='video/mp4' />

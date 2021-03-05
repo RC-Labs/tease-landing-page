@@ -1,0 +1,73 @@
+h1,
+h2,
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.soon {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 880px) {
+  .soon {
+    width: auto;
+  }
+}
+
+.soon .title {
+  width: 100%;
+}
+
+.soon .download {
+  margin: 0 10px;
+  fill: #FFFFFF;
+}
+
+@media (max-width: 425px) {
+  .soon .download {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=soon.css.map */

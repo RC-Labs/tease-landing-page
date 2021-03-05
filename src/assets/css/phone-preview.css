@@ -1,0 +1,130 @@
+h1,
+h2,
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.preview {
+  width: 500px;
+  height: 100%;
+  padding: 0 40px;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .preview {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .preview {
+    width: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .preview {
+    position: relative;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+    margin-left: -100px;
+    bottom: 20px;
+  }
+}
+
+.preview .phone {
+  position: relative;
+  z-index: 300;
+  width: 320px;
+}
+
+.preview .phone .phone-overlay {
+  width: 100%;
+  position: absolute;
+  top: -50px;
+  pointer-events: none;
+}
+
+.preview .phone ::-webkit-scrollbar {
+  width: 1px !important;
+  height: 1px !important;
+}
+
+.preview .phone ::-webkit-scrollbar-track {
+  background: #F6F5FC;
+}
+
+.preview .phone ::-webkit-scrollbar-thumb {
+  background: #F6F5FC;
+}
+
+.preview .phone .phone-content {
+  background: #2c233f;
+  height: 610px;
+  width: 296px;
+  margin: 0 auto;
+  border-radius: 36px;
+  overflow-y: scroll;
+}
+
+.preview .phone .phone-content .phone-body {
+  padding: 20px;
+  height: 1500px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c42886), to(#433662));
+  background: linear-gradient(to bottom, #c42886, #433662);
+}
+
+.preview .circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  position: absolute;
+}
+
+@media (max-width: 580px) {
+  .preview .circle {
+    display: none;
+  }
+}
+/*# sourceMappingURL=phone-preview.css.map */

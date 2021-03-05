@@ -1,3 +1,38 @@
+h1,
+h2,
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 .hero {
   overflow: hidden;
   position: relative;
@@ -27,6 +62,13 @@
           mask-size: 300px;
   -webkit-mask-position: center center;
           mask-position: center center;
+}
+
+@media (max-width: 580px) {
+  .hero .logo-video {
+    -webkit-mask-size: 220px;
+            mask-size: 220px;
+  }
 }
 
 .hero .hero-video {

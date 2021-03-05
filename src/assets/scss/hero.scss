@@ -15,6 +15,10 @@
     mask-repeat: no-repeat;
     mask-size: 300px;
     mask-position: center center;
+
+    @media (max-width: 580px) {
+      mask-size: 220px;
+    }
   }
 
   .hero-video {

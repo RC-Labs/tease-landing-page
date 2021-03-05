@@ -1,0 +1,83 @@
+@import 'variables';
+
+
+.preview {
+  width: 500px;
+  height: 100%;
+  padding: 0 40px;
+  display: block;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding: 0;
+  }
+
+  @media (max-width: 540px) {
+    width: auto;
+  }
+
+  @media (max-width: 425px) {
+    position: relative;
+    transform: rotate(15deg);
+    margin-left: -100px;
+    bottom: 20px;
+  }
+
+  .phone {
+    position: relative;
+    z-index: 300;
+    width: 320px;
+
+    .phone-overlay {
+      width: 100%;
+      position: absolute;
+      top: -50px;
+      pointer-events: none;
+    }
+
+    ::-webkit-scrollbar {
+      width: 1px !important;
+      height: 1px !important;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: $accent-med;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: $accent-med;
+    }
+
+    .phone-content {
+      background: $primary-dark;
+      height: 610px;
+      width: 296px;
+      margin: 0 auto;
+      border-radius: 36px;
+      overflow-y: scroll;
+
+
+      .phone-body {
+        padding: 20px;
+        height: 1500px;
+        background: linear-gradient(to bottom, $secondary-light, $primary-light);
+      }
+    }
+  }
+
+  .circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: $accent-light;
+    position: absolute;
+
+    @media (max-width: 580px) {
+      display: none;
+    }
+  }
+}

@@ -5,28 +5,35 @@
 @import "variables";
 @import "scrollbar";
 
-
-
 * {
   font-family: 'Quicksand', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  overflow: hidden;
-}
-
-.swiper-page {
-  height: 100vh;
-}
-
 section {
-  height: 100vh;
-  padding-top: 90px;
+  // height: 100vh;
+  // padding-top: 90px;
+  min-height: 100vh;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container {
+  width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 40px;
+
+  @media (max-width: 1400px) {
+    width: auto;
+    margin: 0;
+  }
 
   @media (max-width: 768px) {
-    min-height: 100vh;
-    height: auto;
+    padding: 20px;
   }
 }
 

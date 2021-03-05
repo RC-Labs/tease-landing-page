@@ -1,6 +1,7 @@
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 
 /* Track */
@@ -11,4 +12,5 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient($secondary-dark, $secondary-light);
+  border-radius: 5px !important;
 }
