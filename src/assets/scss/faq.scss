@@ -76,11 +76,12 @@
 
   .accordion__panel {
     display: flex;
-    max-height: 500px;
+    max-height: 300px;
     transition: max-height 0.8s;
     position: relative;
     z-index: 399;
     background: $accent-light;
+    overflow: hidden;
 
     p {
       display: block;
@@ -88,13 +89,20 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 22px;
+
+      max-height: 500px;
+      opacity: 1;
+      transition: max-height 0.8s, opacity 0.5s;
+
     }
 
     &[hidden] {
       max-height: 0;
 
       p {
-        display: none;
+        // display: none;
+        max-height: 0;
+        opacity: 0;
       }
     }
   }

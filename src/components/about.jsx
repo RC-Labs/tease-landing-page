@@ -20,7 +20,7 @@ export class About extends Component {
 class AboutText extends Component {
   render() {
     return (
-      <div className="text">
+      <div className="text" data-aos=" ">
         <h2>{aboutData.header}</h2>
         <p>{aboutData.paragraph}</p>
       </div>

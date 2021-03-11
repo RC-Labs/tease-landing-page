@@ -14,6 +14,12 @@ h2 {
   font-size: 40px;
 }
 
+@media (max-width: 425px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
 h3 {
   font-size: 26px;
 }
@@ -112,19 +118,73 @@ p {
   height: 1500px;
   background: -webkit-gradient(linear, left top, left bottom, from(#c42886), to(#433662));
   background: linear-gradient(to bottom, #c42886, #433662);
+  background-image: url("https://qph.fs.quoracdn.net/main-qimg-606d28746f1e0115cb4e043e321b9501");
+  background-size: cover;
 }
 
 .preview .circle {
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: #FFFFFF;
   position: absolute;
+  z-index: 2;
+  -webkit-animation: circle-small 1s;
+          animation: circle-small 1s;
 }
 
 @media (max-width: 580px) {
   .preview .circle {
     display: none;
+  }
+}
+
+.preview .circle.animated {
+  -webkit-animation: circle-big 2s forwards;
+          animation: circle-big 2s forwards;
+}
+
+@-webkit-keyframes circle-big {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(3.2);
+            transform: scale(3.2);
+  }
+}
+
+@keyframes circle-big {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(3.2);
+            transform: scale(3.2);
+  }
+}
+
+@-webkit-keyframes circle-small {
+  0% {
+    -webkit-transform: scale(3.2);
+            transform: scale(3.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes circle-small {
+  0% {
+    -webkit-transform: scale(3.2);
+            transform: scale(3.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=phone-preview.css.map */

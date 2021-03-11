@@ -14,6 +14,12 @@ h2 {
   font-size: 40px;
 }
 
+@media (max-width: 425px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
 h3 {
   font-size: 26px;
 }
@@ -35,6 +41,7 @@ p {
 
 .features {
   background: #F6F5FC;
+  overflow: hidden;
 }
 
 .features .container {
@@ -74,6 +81,8 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  z-index: 400;
 }
 
 @media (max-width: 1024px) {
@@ -105,6 +114,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
+  -webkit-animation: fade-up-exit 1s forwards;
+          animation: fade-up-exit 1s forwards;
 }
 
 @media (max-width: 1024px) {
@@ -122,6 +133,11 @@ p {
     width: 100%;
     padding-right: 0 !important;
   }
+}
+
+.features .feature.animated {
+  -webkit-animation: fade-up-enter 1s forwards;
+          animation: fade-up-enter 1s forwards;
 }
 
 .features .feature .icon {
@@ -187,6 +203,58 @@ p {
   .features .feature p {
     font-size: 14px;
     line-height: 20px;
+  }
+}
+
+@-webkit-keyframes fade-up-enter {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up-enter {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-up-exit {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-up-exit {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=features.css.map */

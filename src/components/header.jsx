@@ -2,7 +2,6 @@ import { Component } from 'react';
 import '../assets/scss/header.scss';
 import '../assets/scss/burger.scss';
 import { menuData } from '../data/header-data';
-
 import { ReactComponent as Logo } from '../assets/images/logo.svg'
 
 
@@ -22,8 +21,8 @@ export class Header extends Component {
   }
   render() {
     return (
-      <header>
-        <a href="#home"><Logo className={this.state.isOpen ? 'header-logo open' : 'header-logo'} /></a>
+      <header id='home'>
+        <Logo className={this.state.isOpen ? 'header-logo open' : 'header-logo'} />
         <nav>
           <Menu />
           <Burger action={this.handler} passOpen={this.state.isOpen} toggleClass={this.state.isOpen ? 'burger open' : 'burger'} />

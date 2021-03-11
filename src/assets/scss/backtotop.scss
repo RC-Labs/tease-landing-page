@@ -1,0 +1,30 @@
+@import "./variables";
+
+.back-to-top {
+  background: $secondary-dark;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  transition: transform 0.2s;
+
+  svg {
+    width: 60%;
+    stroke: white;
+    stroke-width: 2;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

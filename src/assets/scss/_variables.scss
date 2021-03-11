@@ -30,6 +30,10 @@ h1 {
 
 h2 {
   font-size: 40px;
+
+  @media (max-width: 425px) {
+    font-size: 30px;
+  }
 }
 
 h3 {

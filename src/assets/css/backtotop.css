@@ -39,44 +39,38 @@ p {
   margin-bottom: 20px;
 }
 
-.soon {
-  width: 800px;
+.back-to-top {
+  background: #850286;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-@media (max-width: 880px) {
-  .soon {
-    width: auto;
-  }
+.back-to-top svg {
+  width: 60%;
+  stroke: white;
+  stroke-width: 2;
 }
 
-.soon .title {
-  width: 100%;
+.back-to-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
-
-.soon .download {
-  margin: 0 10px;
-}
-
-.soon .download path {
-  fill: #FFFFFF;
-}
-
-@media (max-width: 425px) {
-  .soon .download {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-/*# sourceMappingURL=soon.css.map */
+/*# sourceMappingURL=backtotop.css.map */

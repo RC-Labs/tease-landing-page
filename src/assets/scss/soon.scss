@@ -18,7 +18,10 @@
 
   .download {
     margin: 0 10px;
-    fill: $accent-light;
+
+    path {
+      fill: $accent-light;
+    }
 
     @media (max-width: 425px) {
       width: 100%;

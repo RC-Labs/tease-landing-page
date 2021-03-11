@@ -1,11 +1,11 @@
 @import "./variables";
 
 header {
-  position: absolute;
+  position: fixed;
   height: 80px;
   background: $accent-light;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
   padding: 10px 40px;
 
   display: flex;
@@ -21,15 +21,22 @@ header {
   width: 120px;
   position: relative;
   z-index: 100;
-  fill: $secondary-light;
-  transition: fill 0.5s, margin 0.5s;
+  transition: margin 0.5s;
 
-  &.open {
-    fill: $accent-light;
-    margin-top: 100px;
+  path {
+    fill: $secondary-light;
+    transition: fill 0.5s;
   }
 
-  @media (max-width: 1024px) {
+  &.open {
+    margin-top: 100px;
+
+    path {
+      fill: $accent-light;
+    }
+  }
+
+  @media (max-width: 1025px) {
     margin-left: 40px;
 
     &.open {
@@ -57,7 +64,7 @@ nav {
   display: flex;
   margin-right: 40px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1025px) {
     display: none;
   }
 }
@@ -74,7 +81,7 @@ nav {
     margin-right: 0;
   }
 
-  @media (max-width:1024px) {
+  @media (max-width:1025px) {
     color: $accent-light;
     margin-right: 0;
     font-size: 22px;
@@ -95,24 +102,86 @@ nav {
 
 .mobile-menu {
   display: flex;
-  background: $secondary-dark;
   position: absolute;
   top: 0px;
-  left: -320px;
+  left: 0;
   width: 320px;
   height: 100vh;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   padding-bottom: 50px;
-  transition: left 0.3s ease-in-out;
+  padding-top: 160px;
 
-  &.menu-open {
-    left: 0;
+
+  &:before {
+    content: "";
+
+    min-width: 700px;
+    min-height: 700px;
+    width: 120vh;
+    height: 120vh;
+    border-radius: 50%;
+    background: $secondary-dark;
+    position: absolute;
+    top: -80px;
+    left: -400px;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: top left;
 
   }
 
-  @media (min-width: 1024px) {
+  a {
+    transform: translateY(300px);
+    opacity: 0;
+    // transition: transform 0.2s, opacity 0.2s;
+    // transition-property: transform, opacity;
+
+    &:nth-child(1) {
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    &:nth-child(2) {
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    &:nth-child(3) {
+      transition: transform 0.4s, opacity 0.4s;
+    }
+
+    &:nth-child(4) {
+      transition: transform 0.5s, opacity 0.5s;
+    }
+  }
+
+  &.menu-open {
+
+    a {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    &:before {
+      transform: scale(1);
+      transform-origin: top left;
+    }
+
+  }
+
+  @media (min-width: 1025px) {
     display: none;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    left: -100px;
+  }
+
+  100% {
+    left: 100px;
+
   }
 }

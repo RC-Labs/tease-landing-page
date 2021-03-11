@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import '../assets/scss/features.scss'
 import { featuresData } from '../data/features-data';
-import Preview from './phone-preview';
+import { Preview } from './phone-preview';
 
 export class Features extends Component {
   render() {
@@ -21,7 +21,7 @@ export class Features extends Component {
 class Feature extends Component {
   render() {
     return (
-      <div className="feature">
+      <div className="feature" data-aos=" ">
         <div className="icon">
           {this.props.icon}
         </div>

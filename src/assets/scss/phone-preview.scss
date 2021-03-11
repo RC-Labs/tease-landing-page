@@ -65,19 +65,50 @@
         padding: 20px;
         height: 1500px;
         background: linear-gradient(to bottom, $secondary-light, $primary-light);
+        background-image: url('https://qph.fs.quoracdn.net/main-qimg-606d28746f1e0115cb4e043e321b9501');
+        background-size: cover;
       }
     }
   }
 
+
+
   .circle {
-    width: 500px;
-    height: 500px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background: $accent-light;
     position: absolute;
+    z-index: 2;
+    animation: circle-small 1s;
+
 
     @media (max-width: 580px) {
       display: none;
     }
+
+    &.animated {
+      animation: circle-big 2s forwards;
+    }
+  }
+}
+
+@keyframes circle-big {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(3.2);
+  }
+}
+
+@keyframes circle-small {
+  0% {
+    transform: scale(3.2);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }

@@ -4,19 +4,67 @@
   background: $secondary-light;
   color: $accent-light;
 
+  background-image: url('../images/unzip.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 200;
+
+  &:after {
+    content: "";
+    background: $secondary-light;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 200;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 201;
   }
 
   .text {
     text-align: center;
     width: 800px;
+    animation: fade-out 0.5s forwards;
+
 
     @media (max-width: 880px) {
       width: auto;
     }
+
+    &.animated {
+      animation: fade-in 0.5s forwards;
+
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
   }
 }

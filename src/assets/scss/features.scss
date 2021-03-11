@@ -2,6 +2,7 @@
 
 .features {
   background: $accent-med;
+  overflow: hidden;
 
   .container {
     display: flex;
@@ -22,6 +23,8 @@
     padding-left: 40px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 400;
 
     @media (max-width: 1024px) {
       width: 100%;
@@ -40,6 +43,7 @@
     width: 100%;
     display: flex;
     margin-bottom: 40px;
+    animation: fade-up-exit 1s forwards;
 
     @media (max-width: 1024px) {
       width: 50%;
@@ -53,6 +57,10 @@
     @media (max-width: 580px) {
       width: 100%;
       padding-right: 0 !important;
+    }
+
+    &.animated {
+      animation: fade-up-enter 1s forwards;
     }
 
     .icon {
@@ -105,5 +113,31 @@
         line-height: 20px;
       }
     }
+  }
+}
+
+@keyframes fade-up-enter {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up-exit {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+
+  }
+
+  100% {
+    transform: translateX(100px);
+    opacity: 0;
+
   }
 }
