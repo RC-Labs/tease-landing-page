@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { footerMenuData, disclaimer } from '../data/footer-data';
+import { disclaimer } from '../data/footer-data';
 import "../assets/scss/footer.scss"
 
 export class Footer extends Component {
