@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63.505" height="69.751" viewBox="0 0 63.505 69.751">
+  <g id="Group_349" data-name="Group 349" transform="translate(-260.189 -195.037)">
+    <g id="Group_344" data-name="Group 344">
+      <path id="Path_207" data-name="Path 207" d="M313.816,234.694c0-6.472-3.274-12.326-10.176-13.4-5.684-.882-10.316,1.954-12.9,7.261-2.579-5.307-7.212-8.143-12.9-7.261-6.9,1.071-10.176,6.925-10.176,13.4,0,11.132,23.07,26.048,23.07,26.048S313.816,245.826,313.816,234.694Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+      <path id="Path_208" data-name="Path 208" d="M290.744,228.558c2.283-4.7,6.176-7.452,10.98-7.414v-8.816a10.98,10.98,0,1,0-21.96,0v8.816C284.568,221.106,288.461,223.862,290.744,228.558Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+      <path id="Path_209" data-name="Path 209" d="M277.848,221.3c5.684-.882,10.317,1.954,12.9,7.261,2.579-5.307,7.212-8.143,12.9-7.261a12.371,12.371,0,0,1,2.8.779V211.935a15.693,15.693,0,0,0-31.386,0v10.141A12.371,12.371,0,0,1,277.848,221.3Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+      <path id="Path_210" data-name="Path 210" d="M293.379,239.825a2.555,2.555,0,1,0-4.1,2.019l-.617,3.979h4.332l-.617-3.979A2.543,2.543,0,0,0,293.379,239.825Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+      <path id="Path_211" data-name="Path 211" d="M294.688,253.037a54.821,54.821,0,0,0,12.115-12.1" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+      <path id="Path_212" data-name="Path 212" d="M285.784,229.176c-1.078-2.857-4.1-4.476-7.628-3.962" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+    </g>
+    <g id="Group_348" data-name="Group 348">
+      <circle id="Ellipse_106" data-name="Ellipse 106" cx="0.907" cy="0.907" r="0.907" transform="translate(268.317 200.441)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+      <circle id="Ellipse_107" data-name="Ellipse 107" cx="0.907" cy="0.907" r="0.907" transform="translate(271.475 255.733)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+      <circle id="Ellipse_108" data-name="Ellipse 108" cx="0.907" cy="0.907" r="0.907" transform="translate(316.759 243.909)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+      <g id="Group_345" data-name="Group 345">
+        <line id="Line_159" data-name="Line 159" y1="1.775" transform="translate(265.309 212.822)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+        <line id="Line_160" data-name="Line 160" x2="1.775" transform="translate(267.45 216.737)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+        <line id="Line_161" data-name="Line 161" y2="1.775" transform="translate(265.309 218.878)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+        <line id="Line_162" data-name="Line 162" x1="1.775" transform="translate(261.394 216.737)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+      </g>
+      <g id="Group_346" data-name="Group 346">
+        <line id="Line_163" data-name="Line 163" y1="1.775" transform="translate(318.574 212.307)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+        <line id="Line_164" data-name="Line 164" x2="1.775" transform="translate(320.714 216.222)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+        <line id="Line_165" data-name="Line 165" y2="1.775" transform="translate(318.574 218.363)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+        <line id="Line_166" data-name="Line 166" x1="1.775" transform="translate(314.658 216.222)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+      </g>
+      <g id="Group_347" data-name="Group 347">
+        <line id="Line_167" data-name="Line 167" y1="1.775" transform="translate(305.059 255.753)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+        <line id="Line_168" data-name="Line 168" x2="1.775" transform="translate(307.2 259.668)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+        <line id="Line_169" data-name="Line 169" y2="1.775" transform="translate(305.059 261.809)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+        <line id="Line_170" data-name="Line 170" x1="1.775" transform="translate(301.144 259.668)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.409"/>
+      </g>
+    </g>
+  </g>
+</svg>

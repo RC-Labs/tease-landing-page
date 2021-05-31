@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { faqData } from '../data/faq-data';
+import { faqData, faqHeading } from '../data/faq-data';
 import '../assets/scss/faq.scss';
 import {
   Accordion,
@@ -17,7 +17,7 @@ export class FAQ extends Component {
     return (
       <section className='faq' id='faq'>
         <div className="container">
-          <h2>Frequently Asked Questions</h2>
+          <h2>{faqHeading}</h2>
           <Accordion allowZeroExpanded={true}>
             {accordionList}
           </Accordion>

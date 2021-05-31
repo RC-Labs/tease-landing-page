@@ -8,26 +8,33 @@ import { ReactComponent as Logo } from '../assets/images/logo.svg'
 export class Header extends Component {
   constructor(props) {
     super(props)
-    this.handler = this.handler.bind(this);
+    this.toggle = this.toggle.bind(this);
+    this.turnOff = this.turnOff.bind(this);
     this.state = {
       isOpen: false,
     };
   }
 
-  handler() {
+  toggle() {
     this.setState({
       isOpen: !this.state.isOpen
+    });
+  }
+
+  turnOff() {
+    this.setState({
+      isOpen: false
     });
   }
   render() {
     return (
       <header id='home'>
-        <Logo className={this.state.isOpen ? 'header-logo open' : 'header-logo'} />
+        <a href="home"><Logo className={this.state.isOpen ? 'header-logo open' : 'header-logo'} /></a>
+
         <nav>
           <Menu />
-          <Burger action={this.handler} passOpen={this.state.isOpen} toggleClass={this.state.isOpen ? 'burger open' : 'burger'} />
-          <MobileMenu action={this.handler} passOpen={this.state.isOpen} menuClass={this.state.isOpen ? 'mobile-menu menu-open' : 'mobile-menu'} />
-          <Buttons />
+          <Burger action={this.toggle} passOpen={this.state.isOpen} toggleClass={this.state.isOpen ? 'burger open' : 'burger'} />
+          <MobileMenu action={this.turnOff} passOpen={this.state.isOpen} menuClass={this.state.isOpen ? 'mobile-menu menu-open' : 'mobile-menu'} />
         </nav>
       </header>
     )
@@ -35,16 +42,16 @@ export class Header extends Component {
 }
 
 
-class Buttons extends Component {
-  render() {
-    return (
-      <div className="header-buttons">
-        <div className="button primary-button half-button-left link">Log in</div>
-        <div className="button secondary-button half-button-right link">Sign up</div>
-      </div>
-    )
-  }
-}
+// class Buttons extends Component {
+//   render() {
+//     return (
+//       <div className="header-buttons">
+//         <div className="button primary-button half-button-left link">Log in</div>
+//         <div className="button secondary-button half-button-right link">Sign up</div>
+//       </div>
+//     )
+//   }
+// }
 
 class Menu extends Component {
   render() {

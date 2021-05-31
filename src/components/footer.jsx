@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { footerMenuData, disclaimer } from '../data/footer-data';
-import Soon from './soon';
 import "../assets/scss/footer.scss"
 
 export class Footer extends Component {
@@ -8,15 +7,15 @@ export class Footer extends Component {
     return (
       <footer className="footer" id='support'>
         <div className="container">
-          <div className="left">
-            <FooterMenuList />
-            <p className="disclaimer">
-              {disclaimer}
-            </p>
-          </div>
-          <div className="right">
+          {/* <div className="left"> */}
+          {/* <FooterMenuList /> */}
+          <p className="disclaimer">
+            {disclaimer}
+          </p>
+          {/* </div> */}
+          {/* <div className="right">
             <Soon />
-          </div>
+          </div> */}
         </div>
         <Copyright />
       </footer>
@@ -24,19 +23,19 @@ export class Footer extends Component {
   }
 }
 
-class FooterMenuList extends Component {
-  render() {
-    return (
-      <ul className="footer-menu">
-        {footerMenu}
-      </ul>
-    )
-  }
-}
+// class FooterMenuList extends Component {
+//   render() {
+//     return (
+//       <ul className="footer-menu">
+//         {footerMenu}
+//       </ul>
+//     )
+//   }
+// }
 
-const footerMenu = footerMenuData.map((element, index) =>
-  <li key={`footer-menu-${index}`}>{element.name}</li>
-)
+// const footerMenu = footerMenuData.map((element, index) =>
+//   <li key={`footer-menu-${index}`}>{element.name}</li>
+// )
 
 class Copyright extends Component {
   render() {

@@ -1,10 +1,10 @@
 
 const menuData = [
   {
-    name: 'About',
+    name: 'O Tease',
     link: '#about',
   }, {
-    name: 'Features',
+    name: 'Aplikacja',
     link: '#features',
   }, {
     name: 'FAQ',

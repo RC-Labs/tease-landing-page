@@ -8,6 +8,7 @@ import { Features } from './components/features';
 import { FAQ } from './components/faq';
 import { Newsletter } from './components/newsletter';
 import { Footer } from './components/footer';
+import { BackToTop } from './components/back-top';
 AOS.init({
   animatedClassName: 'animated',
   mirror: true,
@@ -16,6 +17,7 @@ AOS.init({
 function App() {
   return (
     <>
+      <BackToTop />
       <Header />
       <Hero />
       <About />

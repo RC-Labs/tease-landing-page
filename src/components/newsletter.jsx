@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import '../assets/scss/newsletter.scss';
+import { newsletterData } from '../data/newsletter-data';
 
 export class Newsletter extends Component {
   render() {
@@ -7,8 +8,8 @@ export class Newsletter extends Component {
       <div className="newsletter">
         <div className="container">
           <div className="text">
-            <h2>Sign up for our teaseletter</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2>{newsletterData.header}</h2>
+            <p>{newsletterData.description}</p>
           </div>
           <NewsletterForm />
         </div>
@@ -21,8 +22,8 @@ class NewsletterForm extends Component {
   render() {
     return (
       <form className='newsletter-form' action="" method="post">
-        <input type="text" name="" id="" placeholder='asdasd' />
-        <input type="button" value="sign up" />
+        <input type="text" name="" id="" placeholder={newsletterData.mailPlaceholder} />
+        <input type="button" value={newsletterData.button} />
       </form>
     )
   }
