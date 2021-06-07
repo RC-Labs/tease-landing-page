@@ -28,8 +28,8 @@ export class Header extends Component {
   }
   render() {
     return (
-      <header id='home'>
-        <a href="home"><Logo className={this.state.isOpen ? 'header-logo open' : 'header-logo'} /></a>
+      <header>
+        <a href="#home"><Logo className={this.state.isOpen ? 'header-logo open' : 'header-logo'} /></a>
 
         <nav>
           <Menu />

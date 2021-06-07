@@ -1,6 +1,6 @@
 const newsletterData = {
   header: 'Zapisz się do naszego teaslettera!',
-  description: 'Bądź na bieżąco z Tease! Zadbamy o to aby cię poinformować o najnowszych aktualizacjach i super funkcjach, które ulepszamy dla ciebie codziennie.',
+  description: 'Bądź na bieżąco z Tease! Codziennie pracujemy nad ulepszaniem aplikacji o nowe funkcji. Wykorzystaj je, zanim inni je zauważą. Dowiaduj się jako pierwszy o promocjach i aktualizacjach, stworzonych z myślą o każdym z Was.',
   mailPlaceholder: 'Twój e-mail',
   button: 'Zapisz mnie'
 }
