@@ -1,19 +1,19 @@
 @import './variables';
 
 .about {
-  background: $secondary-light;
-  color: $accent-light;
+  background: $accent-light;
+  color: $secondary-light;
 
-  background-image: url('../images/unzip.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-image: url('../images/unzip.png');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
   position: relative;
   z-index: 200;
 
   &:after {
     content: "";
-    background: $secondary-light;
+    background: $accent-med;
     width: 100%;
     height: 100%;
     position: absolute;

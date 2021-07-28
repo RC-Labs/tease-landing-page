@@ -6,7 +6,7 @@ import Iframe from 'react-iframe'
 export class Newsletter extends Component {
   render() {
     return (
-      <div className="newsletter">
+      <div className="newsletter" id='newsletter'>
         <div className="container">
           <div className="text">
             <h2>{newsletterData.header}</h2>
