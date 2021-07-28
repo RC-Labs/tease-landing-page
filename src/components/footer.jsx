@@ -1,22 +1,22 @@
 import { Component } from 'react';
-import { disclaimer } from '../data/footer-data';
+// import { disclaimer } from '../data/footer-data';
 import "../assets/scss/footer.scss"
 
 export class Footer extends Component {
   render() {
     return (
       <footer className="footer" id='support'>
-        <div className="container">
-          {/* <div className="left"> */}
-          {/* <FooterMenuList /> */}
+        {/* <div className="container">
+          <div className="left">
+          <FooterMenuList />
           <p className="disclaimer">
             {disclaimer}
           </p>
-          {/* </div> */}
-          {/* <div className="right">
+          </div>
+          <div className="right">
             <Soon />
-          </div> */}
-        </div>
+          </div>
+        </div> */}
         <Copyright />
       </footer>
     )
