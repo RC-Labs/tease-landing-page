@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import '../assets/scss/hero.scss';
-import heroVideo from '../assets/images/15536284-preview.mp4';
+import heroVideo from '../assets/images/1048130161-hd.mp4';
 
 export class Hero extends Component {
   render() {

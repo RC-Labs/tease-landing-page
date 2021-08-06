@@ -23,7 +23,8 @@ header {
   z-index: 100;
   transition: margin 0.5s;
 
-  path {
+  path,
+  rect {
     fill: $secondary-light;
     transition: fill 0.5s;
   }
@@ -31,7 +32,8 @@ header {
   &.open {
     margin-top: 100px;
 
-    path {
+    path,
+    rect {
       fill: $accent-light;
     }
   }
@@ -70,24 +72,30 @@ nav {
 }
 
 .menu-link {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: $secondary-light;
   margin-right: 20px;
-  padding: 10px 20px;
+
+  a {
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: $secondary-light;
+    padding: 10px 20px;
+
+    @media (max-width:1025px) {
+      color: $accent-light;
+      margin-right: 0;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+  }
 
   &:last-child {
     margin-right: 0;
   }
 
-  @media (max-width:1025px) {
-    color: $accent-light;
-    margin-right: 0;
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
+
 }
 
 .header-buttons {

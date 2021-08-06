@@ -37,6 +37,7 @@ class NewsletterForm extends Component {
         width="100%"
         height="300 px"
         id="myId"
+        title='newsletter'
         className="newsletter-form"
         scrolling='no'
         styles=''

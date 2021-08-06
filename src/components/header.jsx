@@ -29,7 +29,9 @@ export class Header extends Component {
   render() {
     return (
       <header>
-        <a href="#home"><Logo className={this.state.isOpen ? 'header-logo open' : 'header-logo'} /></a>
+        <a href="#home"><Logo className={this.state.isOpen ? 'header-logo open' : 'header-logo'} />
+          <span className='link-placeholder'>logo</span>
+        </a>
 
         <nav>
           <Menu />
@@ -66,7 +68,7 @@ class Menu extends Component {
 }
 
 const menuLinks = menuData.map((element, index) =>
-  <a href={element.link} key={`menu-link-${index}`}><li className='menu-link' >{element.name}</li></a>
+  <li className='menu-link' key={`menu-link-${index}`}><a href={element.link} >{element.name}</a></li>
 )
 
 
